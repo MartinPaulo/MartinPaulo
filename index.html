@@ -39,7 +39,7 @@
         }
 
         body {
-            font-family: var(--font-secondary),serif;
+            font-family: var(--font-secondary), serif;
             font-size: var(--font-scale);
             margin: auto;
             padding: 20px;
@@ -53,7 +53,7 @@
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-main),serif;
+            font-family: var(--font-main), serif;
             color: var(--heading-color);
         }
 
@@ -139,10 +139,10 @@
 
         .card {
             /* Add shadows to create the "card" effect */
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;
             border-radius: 5px; /* 5px rounded corners */
-            width: 30%;
+            width: 100%;
         }
 
         /* On mouse-over, add a deeper shadow */
@@ -158,45 +158,74 @@
         .container {
             padding: 2px 16px;
         }
+
+        .column {
+            float: left;
+        }
+
+        .left {
+            width: 30%;
+        }
+
+        .right {
+            width: 70%;
+            padding-left: 10px;
+        }
+
+        .row {
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
 <h1>About Me</h1>
-<div class="card">
-    <img src="597780.png" alt="Avatar" style="width:100%">
-    <div class="container">
-        <h4><b>Martin Paulo</b></h4>
-        <p>Software Developer</p>
-        <p>Melbourne</p>
+<div class="row">
+    <div class="column left">
+        <div class="card">
+            <img src="597780.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Martin Paulo</b></h4>
+                <p>Software Developer</p>
+                <p>Contact:</p>
+                <img src="vcard.png" alt="VCard" style="width:100%">
+            </div>
+        </div>
     </div>
-</div>
-<p>My name is Martin Paulo. I have an inquisitive nature, always seeking to learn new technologies and to solve
-    complex problems with innovative solutions, whilst maintaining a collaborative spirit that enhances team
-    productivity.
-    Software development, after all, is a human endeavor!</p>
-<ol>
-    <li><b>Inquisitive Mindset</b>: I have a natural curiosity that drives me to explore new technologies and to
-        understand how things work.
-    </li>
-    <li><b>Eager to Learn</b>: I'm always seeking opportunities to expand my knowledge and skills, whether through
-        formal
-        education or self-directed learning.
-    </li>
-    <li><b>Problem-Solving Enthusiast</b>: I enjoy tackling complex problems and finding creative solutions to them.
-    </li>
-    <li><b>Innovative Thinking</b>: I'm constantly looking for ways to improve my processes and to develop new
-        solutions.
-    </li>
-    <li><b>Open to Feedback</b>: I welcome constructive criticism and try use it as a tool for growth and improvement.
-    </li>
-    <li><b>Passionate about Technology</b>: : I have a genuine interest in the latest trends and advancements in
-        software development.
-    </li>
-    <li><b>Collaborative Spirit</b>: I believe in sharing knowledge and collaborating with others to achieve common
-        goals.
-    </li>
-</ol>
+    <div class="column right">
+        <p>My name is Martin Paulo. I have an inquisitive nature, always seeking to learn new technologies and to solve
+            complex problems with innovative solutions, whilst maintaining a collaborative spirit that enhances team
+            productivity.
+            Software development, after all, is a human endeavor!</p>
+        <ol>
+            <li><b>Inquisitive Mindset</b>: I have a natural curiosity that drives me to explore new technologies and to
+                understand how things work.
+            </li>
+            <li><b>Eager to Learn</b>: I'm always seeking opportunities to expand my knowledge and skills, whether
+                through
+                formal
+                education or self-directed learning.
+            </li>
+            <li><b>Problem-Solving Enthusiast</b>: I enjoy tackling complex problems and finding creative solutions to
+                them.
+            </li>
+            <li><b>Innovative Thinking</b>: I'm constantly looking for ways to improve my processes and to develop new
+                solutions.
+            </li>
+            <li><b>Open to Feedback</b>: I welcome constructive criticism and try use it as a tool for growth and
+                improvement.
+            </li>
+            <li><b>Passionate about Technology</b>: : I have a genuine interest in the latest trends and advancements in
+                software development.
+            </li>
+            <li><b>Collaborative Spirit</b>: I believe in sharing knowledge and collaborating with others to achieve
+                common
+                goals.
+            </li>
+        </ol>
+    </div>
 
+</div>
 </body>
 </html>
+
